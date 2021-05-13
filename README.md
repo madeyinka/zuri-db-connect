@@ -2,7 +2,7 @@
 Task on performing CRUD opertaions on db from node app
 
 1. Create payload:
-    endpoint: base_url/create
+    endpoint: https://node-payload-app.herokuapp.com/create
     method: POST
     params: {name: $name,email: $email,country: country} 
     return (success): 
@@ -11,7 +11,7 @@ Task on performing CRUD opertaions on db from node app
     }
 
 2. update payload:
-    endpoint: base_url/update/:id
+    endpoint: https://node-payload-app.herokuapp.com/update/:id
     method: PUT
     params: {name: $name,email: $email,country: country} 
     return (success): 
@@ -20,7 +20,7 @@ Task on performing CRUD opertaions on db from node app
     }
 
 3. fetch all payloads
-    endpoint: base_url/fetch   
+    endpoint: https://node-payload-app.herokuapp.com/fetch   
     method: GET 
     return (success)
     {
@@ -43,7 +43,7 @@ Task on performing CRUD opertaions on db from node app
     }
 
 4. fetch single record
-    endpoint: base_url/single/:id
+    endpoint: https://node-payload-app.herokuapp.com/single/:id
     method: GET,
     return (success)
     {
@@ -59,6 +59,6 @@ Task on performing CRUD opertaions on db from node app
     }
 
 5. delete record
-    endpoint: base_url/delete/:id
+    endpoint: https://node-payload-app.herokuapp.com/delete/:id
     method: DELETE
     return (success): "record deleted"
