@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 const payloadSchema = new mongoose.Schema({
-    name: {type: String, unique:true, default:""},
-    email: {type: String, default:""},
+    name: {type: String, default:""},
+    email: {type: String, unique:true, default:""},
     country: {type: String, default:""}
 })
 

@@ -28,7 +28,7 @@ var Controller = {
         payloadModel.find({}, (err, payloads) => {
             if (err) return res.status(500).json({ message: err.message})
             else
-                return res.status(200).json({ payloads })
+                return res.status(200).json({ message: "All Payloads" payloads })
         })
     },
 
@@ -37,7 +37,7 @@ var Controller = {
             if (err) {
                 return res.status(500).json({ message: err.message })
             } else {
-                return res.status(200).json ({ resp })
+                return res.status(200).json ({ message: "Payload", resp })
             }
         })
     },
@@ -56,7 +56,7 @@ var Controller = {
                     if (err) {
                         return res.status(500).json({ message: err.message })
                     } else {
-                        return res.status(200).json({ resp })
+                        return res.status(200).json({ message: "Payload", resp })
                     }
                 })
             }
